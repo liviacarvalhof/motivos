@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: block;
+}
+
+header {
+    background: #a52a2a; /* Vermelho */
+    color: rgb(192, 192, 192);
+    text-align: center;
+    padding: 20px;
+    font-family: fantasy;
+    
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+#motivos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.motivo {
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 15px;
+    width: 300px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.motivo:hover {
+    background: #e7e7e7; /* Cinza claro */
+}
+
+.detalhes {
+    display: none;
+    margin-top: 10px;
+    color: #555;
+}
+header {
+    background: #a52a2a; /* Vermelho */
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.logo {
+    max-width: 70%;
+    height: auto;
+    vertical-align: middle; /* Alinha a logo com o texto */
+    margin-right: 10px; /* Espaço entre a logo e o texto */
+}
+
+footer{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: white;
+}
+@media (max-width: 768px) {
+    .logo {
+        max-width: 20%; /* Aumenta a logo em telas menores */
+    }
+    
+    #motivos {
+        padding: 10px; /* Menos espaço em telas menores */
+    }
+
+    .motivo {
+        width: 90%; /* Amplia a largura das motivações */
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        max-width: 30%; /* Logo ainda maior em telas muito pequenas */
+    }
+
+    header {
+        padding: 15px; /* Ajusta o padding do cabeçalho */
+    }
+}
